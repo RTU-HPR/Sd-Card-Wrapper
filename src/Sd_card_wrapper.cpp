@@ -1,4 +1,3 @@
-#ifdef SD_CARD_WRAPPER_ENABLE
 #include <Sd_card_wrapper.h>
 #include <cmath>
 
@@ -383,4 +382,3 @@ bool SD_Card_Wrapper::read_config(String &config)
 {
     return read_last_line_from_file(config, _config_file_path);
 }
-#endif // SD_CARD_WRAPPER_ENABLE
